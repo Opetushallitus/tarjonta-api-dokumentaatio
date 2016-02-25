@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "deferred": "^0.7.5",
     "unirest": "^0.4.2"
   }
 }
