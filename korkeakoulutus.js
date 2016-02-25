@@ -1,8 +1,8 @@
-const authenticate = require('./authenticate')
+const authenticate = require('./lib/authenticate')
 const config = require('./config')
 const unirest = require('unirest')
 const assert = require('assert')
-const upsertKoulutus = require('./upsertKoulutus')
+const upsertKoulutus = require('./lib/upsertKoulutus')
 
 authenticate().then(casTicket => {
 
