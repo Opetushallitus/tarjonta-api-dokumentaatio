@@ -3,3 +3,4 @@ Tästä reposta löytyy koulutustarjonnan JSON-rajapinnan käyttöesimerkkejä k
 
 Esimerkkitoteutukset tällä hetkellä:
   * [korkeakoulutus.js](korkeakoulutus.js)
+  * [korkeakouluopinto.js (avoin yliopisto / avoin amk)](korkeakouluopinto.js)
