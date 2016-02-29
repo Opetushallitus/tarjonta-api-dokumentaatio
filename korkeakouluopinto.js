@@ -37,9 +37,16 @@ authenticate().then(casTicket => {
         opinnonTyyppiUri: 'opinnontyyppi_5',
         opintojenMaksullisuus: true, // jos koulutus on maksullinen
         hintaString: '120', // koulutuksen hinta jos maksullinen,
+
+        // tarkan alkamispäivämäärän sijasta voi vaihtoehtoisesti antaa pelkän kauden + vuoden
+        // koulutuksenAlkamiskausi: { // https://testi.virkailija.opintopolku.fi/koodisto-service/rest/codeelement/codes/kausi/1
+        //  uri: 'kausi_k' // kevät
+        // },
+        // koulutuksenAlkamisvuosi: 2016
         koulutuksenAlkamisPvms: [
             new Date().getTime() // koulutuksen aklamispvmt, voi olla useita
         ],
+        
         koulutuksenLoppumisPvm: new Date().getTime(),
         koulutusohjelma: {
             tekstis: {
@@ -94,7 +101,8 @@ authenticate().then(casTicket => {
                 sahkoposti: 'matti@meikalainen.com',
                 titteli: 'Opinto-ohjaaja'
             }
-        ]
+        ],
+        isAvoimenYliopistonKoulutus: true // Onko avoimen ammattikorkeakoulun/yliopiston koulutus
     }
 
     upsertKoulutus(casTicket, koulutus).then(response => {
