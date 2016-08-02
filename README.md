@@ -3,7 +3,7 @@ Tästä reposta löytyy koulutustarjonnan JSON-rajapinnan käyttöesimerkkejä k
 
 Esimerkkitoteutukset tällä hetkellä:
   * [ammatillinenPerustutkinto.js](ammatillinenPerustutkinto.js)
-  * [ammattitutkinto.js](ammattitutkinto.js)
+  * [ammattitutkinto.js (erikoisammattitutkinto / ammatillinen perustutkinto näyttötutkintona)](ammattitutkinto.js)
   * [korkeakoulutus.js](korkeakoulutus.js)
   * [korkeakouluopinto.js (avoin yliopisto / avoin amk)](korkeakouluopinto.js)
 
